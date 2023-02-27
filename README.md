@@ -3,6 +3,7 @@
 Program2.c can be used to calculate the outcome of evolutionary game theory's payoff matrix, while GUI.py to visualize that outcome.
 
 An XML file of the structure defined similarly to what is shown below is needed as an input to both programs:
+```
 <?xml version="1.0" encoding="UTF-8"?>
 <data>
     <inputs> 
@@ -32,8 +33,9 @@ An XML file of the structure defined similarly to what is shown below is needed 
         <save-path>outputFile</save-path><!--save path-->
     </outputs>
 </data>
+```
 
-Initial population matrix is a bin matrix - for 3x3 game lattice for 2 phenotypes, its size is 3x3x2 (2x2 for one phenotype and 2x2 for the other, subsequently).
+Initial population matrix is a bin matrix - for 3x3 game lattice for 2 phenotypes, its size is 3x3x2 (3x3 for one phenotype and 3x3 for the other, subsequently).
 
 In order to use the graphic user interface, an input XML file must be provided, and the file path can be specified
 in two different ways, either by writing a Python program call and GUI file name into the terminal, after which the
