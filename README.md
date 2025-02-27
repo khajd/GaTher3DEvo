@@ -34,6 +34,33 @@ An XML file of the structure defined similarly to what is shown below is needed 
 </data>
 ```
 
+Working example:
+```
+<?xml version="1.0" encoding="UTF-8"?>
+<data>
+	<inputs>
+		<dimension>3</dimension>
+		<size>10</size>
+		<MSEG>0</MSEG>
+		<maxgeneration>60</maxgeneration>
+		<mortality>0.1</mortality>
+		<updating>1</updating>
+		<neighbourhood>1</neighbourhood>
+		<reproduction>1</reproduction>
+		<param>3</param>
+		<payoff>
+			<row r="0">0.75 3.50 1.50</row>
+			<row r="1">8.00 0.50 4.00</row>
+			<row r="2">6.50 5.50 0.00</row>
+		</payoff>
+	</inputs>
+	<outputs>
+		<save-path>RESULTS/</save-path>
+	</outputs>
+</data>
+
+```
+
 Initial population matrix is a bin matrix - for 3x3 game lattice for 2 phenotypes, its size is 3x3x2 (3x3 for one phenotype and 3x3 for the other, subsequently).
 
 ![GUI_input](https://github.com/user-attachments/assets/57c2bc3d-13bc-402a-9805-a44aca544dd3)
