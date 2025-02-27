@@ -32,7 +32,7 @@ class App:
         if len(sys.argv)>1:
            path=sys.argv[1]#print(sys.argv[1])
         else:
-           path=input("Podaj ścieżkę pliku XML\n")
+           path=input("Please input path to XML file\n")
         
         tree = ET.parse(path)
         root = tree.getroot()
@@ -91,10 +91,10 @@ class App:
 	
 
            
-        self.label= tk.LabelFrame(self.root, text="Ustaw kanały alfa fenotypów do podglądu 3D")
+        self.label= tk.LabelFrame(self.root, text="Set alpha for phenotypes for 3D view")
         self.label.pack(side="bottom")
         
-        self.button = tk.Button(self.label, text="Pokaż generację w 3D", command=self.openIn3D)
+        self.button = tk.Button(self.label, text="Show generation in 3D", command=self.openIn3D)
         self.button.pack(side="right")
         
         
@@ -108,11 +108,11 @@ class App:
         self.labelEmpty.pack(side="bottom")
         
         
-        self.group = tk.LabelFrame(self.root, text="Zapisz podgląd 2D do pliku")
+        self.group = tk.LabelFrame(self.root, text="Save 2D view to file")
         self.group.pack(side="bottom")
         
         
-        self.button = tk.Button(self.group, text="Zapisz", command=self.save)
+        self.button = tk.Button(self.group, text="Save", command=self.save)
         self.button.pack(side="right")
         
         self.pathEntry = tk.Entry(self.group)
@@ -121,14 +121,14 @@ class App:
         
         self.genValue=tk.IntVar();
         
-        self.labelGeneration = tk.LabelFrame(self.root, text="Generacja")
+        self.labelGeneration = tk.LabelFrame(self.root, text="Generation")
         self.labelGeneration.pack(side="bottom")
         self.slider = tk.Scale(self.labelGeneration, from_=0, to=self.generation-1, 
                                orient="horizontal", 
                                command=self.updateValue, variable=self.genValue, showvalue=0, length=300)
         
         self.meanBool = tk.IntVar()
-        self.checkButton=tk.Checkbutton(self.labelGeneration, text="Pokaż uśrednionie wszystkich generacji", variable=self.meanBool, command=self.meanUpdate)
+        self.checkButton=tk.Checkbutton(self.labelGeneration, text="Show averaged results of all generations", variable=self.meanBool, command=self.meanUpdate)
         self.checkButton.pack(side="bottom")
         
         self.slider.pack(side = "left")
@@ -146,7 +146,7 @@ class App:
             self.slider2.pack(side = "right")
         
         
-        self.button = tk.Button(self.root, text="Pokaż przebiegi fenotypów", command=self.openIn2D)
+        self.button = tk.Button(self.root, text="Show timecourses of phenotypes", command=self.openIn2D)
         self.button.pack(side="top")
         
     
@@ -292,8 +292,8 @@ class App:
         axes = plt.gca()
         axes.set_ylim([0.0,1.0])
         
-        plt.xlabel("Generacja")
-        plt.ylabel("Częstość")
+        plt.xlabel("Generation")
+        plt.ylabel("Frequency")
         #plt.savefig(self.tempPath+'.png')
         plt.show()
 
