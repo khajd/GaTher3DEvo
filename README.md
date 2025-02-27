@@ -19,8 +19,7 @@ An XML file of the structure defined similarly to what is shown below is needed 
         <reproduction>2</reproduction><!--0 - probabilistic;
                 1 - deterministic; 2 - weighted mean-->
         <param>3</param><!--number of cells for mean, for weighted mean reproduction method only-->
-       <resources v="6" c="9" param1="0.0" param2="1.0"
-        param3="300">step</resources><!--resources function-->
+        <resources v="6" c="9" param1="0.0" param2="1.0" param3="300">step</resources><!--resources function-->
         <payoff>
             <row r="0">2 1.5 4</row>
             <row r="1">3 1 0</row>
