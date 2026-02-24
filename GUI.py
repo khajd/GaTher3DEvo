@@ -13,7 +13,7 @@ import pandas as pd
 from pandas import DataFrame
 
 import datetime
-import pandas_datareader.data
+# import pandas_datareader.data
 
 import matplotlib.pyplot as plt
 from mpl_toolkits.mplot3d import Axes3D
