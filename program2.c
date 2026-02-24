@@ -5,6 +5,7 @@
 #include<libxml/tree.h>
 #include<string.h>
 #include<math.h>
+#include<omp.h>
 
 #ifdef LIBXML_TREE_ENABLED
 
