@@ -109,6 +109,8 @@ GUI allows user to see average result of all generations, time course of phenoty
 
 ![show_time_course_of_phenotypes](https://github.com/user-attachments/assets/5950edd9-f260-4e76-8032-82962b782af2)
 
-Show time course of phenotypes. It is not the same as replicator dynamics!
+Show time course of phenotypes. It is not the same as replicator dynamics! It shows the phenotype frequency for every generation.
+
+*Software has been tested and proven to be working on WSL.*
 
 Software written by Marek Bonk as part of his Master's Thesis project on Silesian University of Technology.
